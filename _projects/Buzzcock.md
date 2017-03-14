@@ -21,7 +21,7 @@ My favorite part was styling the project. I used a giff from giphy and I just ke
 
 The audio is plain old elevator music which is just a simple touch to make the app pleasent and fun to play on.
 
-<img width="750px" src="http://i.imgur.com/nrdsiHm.png">
+<img width="90%" src="http://i.imgur.com/nrdsiHm.png">
 
 ### Tech used
 
