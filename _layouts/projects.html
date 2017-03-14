@@ -15,7 +15,9 @@ layout: default
 
 
 <ul>
-  {% for project in site.projects %}
+  {% assign projects = site.projects | sort: 'date' %}
+  {% for project in projects reversed %}
+
   <li>
     <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
     <p href="{{ project.url | prepend: site.baseurl }}">{{ project.subtitle }}</p>

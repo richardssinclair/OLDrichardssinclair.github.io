@@ -9,9 +9,15 @@ layout: default
 
   {% include page_heading.html %}
 
+  <img width="90%" src="{{ page.image }}">
+
+  <h4><a href="{{ page.project_url }}">View the project</a> |
+    <a href="{{ page.github_url }}">View the code</a></h4>
+
 <h3>{{ page.subtitle }}</h3>
-<h4><a href="{{ page.project_url }}">View the project</a></h4>
-<img width="90%" src="{{ page.image }}">
+
+
+
 <p>{{ content }}</p>
 
 </article>
