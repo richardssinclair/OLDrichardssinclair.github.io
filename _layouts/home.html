@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-      <header class="clearfix">
+{% include head.html %}
+<body class="home">
 
 
-        <div class="container mx-auto px-2 mt-4 mb-2 clearfix header-text">
-          <h1 class="h0 inline-block py-2 mt-4 header-title">{{ site.title }}</h1>
+  <video autoplay="" loop="" poster="video/portal.jpg" muted id="bgvid" source="" src="video/final2.mp4"></video>
 
-          <div class="clearfix mb-4 py-1">
-            <p class="h4 lh-condensed font-smoothing">{{ site.description }}</p>
-            <div class="col-1 sm-width-full border-top-thick">
-            </div>
-          </div>
 
-        </div>
-      </header>
+  <header class="clearfix">
+    <h1 class="h0 inline-block py-2 mt-4 header-title">{{ site.title }}</h1>
+    <div class="clearfix mb-4 py-1">
+      <p class="h4 lh-condensed font-smoothing">{{ site.description }}</p>
+    </div>
 
-  </body>
+<p>Art is realising what your soul needs to express.<br>Coding is art in a world where your soul isnt limited by everyday life.</p>
+
+    <div class="homebuttons">
+    <ul class="mt-2 mr-2 mr-lg-3">
+      {% for my_page in site.pages %}
+      {% if my_page.title %}
+      <li class="inline-block block-lg text-right ml-1 ml-lg-0">
+        <a class="= no-underline h4 font-smoothing" href="{{ my_page.url | prepend: site.baseurl }}">{{my_page.title }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    </div>
+
+  </header>
+
+</body>
+
 
 </html>

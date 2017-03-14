@@ -15,11 +15,15 @@
 # in the templates via {{ site.myvariable }}.
 title: Richard Sinclair
 email: richarssinclair@gmail.com
-description: > # Front End Web Developer.
+description: Web Developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: richssinclair
 github_username:  richardssinclair
+linkedin_username: richardssinclair
+instagram_username: richardssinclair
+
+
 
 # Build settings
 markdown: kramdown

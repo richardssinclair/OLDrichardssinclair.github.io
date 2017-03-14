@@ -5,6 +5,66 @@
 
 // Import partials from `sass_dir` and set theme here
 @import
-        "theme-{{ site.theme_color | default: "light" }}.scss"
-        // "theme-{{ site.theme_fonts | default: "system" }}.scss"
+"theme-{{ site.theme_color | default: "light" }}.scss"
+// "theme-{{ site.theme_fonts | default: "system" }}.scss"
 ;
+
+// li{
+//   display: inline-block !important;
+//   margin-right: 0px;
+//   margin: 10px;
+// }
+
+
+.home{
+  position: relative;
+
+h1{
+font-weight:100;
+}
+
+  li{
+    display: inline-block !important;
+    margin-left: 40px;
+    margin-right: -0px;
+    margin-top: 250px;
+
+    border-color: black;
+    border-style: dotted;
+
+    a{
+      padding: 10px;
+    }
+
+  }
+
+  header{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+  }
+
+  video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+
+
+  }
+
+
+}
