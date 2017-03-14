@@ -1,7 +1,7 @@
 ---
 layout: project
 title: nApp
-subtitle: My first JS exploration... #wtwtwtw
+subtitle: A online diary for your dreams
 image: http://i.imgur.com/BX9dCoz.jpg
 project_url: https://github.com/richardssinclair/WDI_PROJECT_3
 ---

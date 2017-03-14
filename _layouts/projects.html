@@ -1,16 +1,29 @@
 ---
-layout: page
+layout: default
 
 ---
-<h4>
-These projects represent my first steps into web development.
-They were created during my web development course at General Assembly.
-</h4>
-<br>
+<body class="projects-page">
+
+
+<div class="projects-page">
+
+
+<article class="container mx-auto px-2">
+
+  {% include page_heading.html %}
+
+
+
 <ul>
   {% for project in site.projects %}
   <li>
     <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+    <p href="{{ project.url | prepend: site.baseurl }}">{{ project.subtitle }}</p>
+    <br>
   </li>
   {% endfor %}
 </ul>
+
+</article>
+</div>
+</body>

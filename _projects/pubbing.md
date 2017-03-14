@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Pubbing
-subtitle: Google Maps API #wtwtwtw
+subtitle: A pub crawl app.
 image: http://i.imgur.com/EQLyTzS.jpg
 project_url: https://github.com/richardssinclair/WDI-Project-2
 ---

@@ -1,8 +1,19 @@
 ---
-layout: page
+layout: default
 
 ---
-<h2>{{ page.subtitle }}</h2>
-<h3><a href="{{ page.project_url }}">View the project</a></h3>
-<img src="{{ page.image }}">
+<body class="project-content">
+
+
+<article class="container mx-auto px-2">
+
+  {% include page_heading.html %}
+
+<h3>{{ page.subtitle }}</h3>
+<h4><a href="{{ page.project_url }}">View the project</a></h4>
+<img width="90%" src="{{ page.image }}">
 <p>{{ content }}</p>
+
+</article>
+
+</body>

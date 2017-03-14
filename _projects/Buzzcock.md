@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Buzzcock
-subtitle: My first JS exploration... #wtwtwtw
+subtitle: A hangman game based on music lyrics.
 image: http://i.imgur.com/H9ESh9E.jpg
 project_url: https://github.com/richardssinclair/WDI_Project_1
 ---
