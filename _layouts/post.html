@@ -1,22 +1,51 @@
 ---
 layout: default
 ---
+<div id="main">
+  <article>
+    <header>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </header>
 
-<article class="container mx-auto px-2" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="mt-4 mb-2 clearfix header-text">
-    <h1 class="h0 inline-block py-2 mt-4 header-title">{{ page.title }}</h1>
-    <div class="clearfix mb-4 py-1">
-      <p class="h4 lh-condensed"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
-      <div class="col-1 sm-width-full border-top-thick">
-      </div>
-    </div>
-  </div>
-
-  <div class="prose py-4" itemprop="articleBody">
+    <section>
       {{ content }}
-  </div>
-</article>
+    </section>
 
-<div class="container mx-auto px-2 py-2 clearfix">
-  {% include previous-next.html %}
+    <footer>
+      <div class="row">
+      {% if page.previous %}
+        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt">
+          <header>
+            <h2><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
+          </header>
+          <section>
+            {{ page.previous.excerpt }}
+          </section>
+          <footer>
+            <ul class="actions">
+              <li><a href="{{ page.previous.url }}" class="button">Read More</a></li>
+            </ul>
+          </footer>
+        </article>
+      {% endif %}
+
+      {% if page.next %}
+        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt f-right">
+          <header>
+            <h2><a href="{{ page.next.url }}">{{ page.next.title }}</a></h2>
+          </header>
+          <section>
+            {{ page.next.excerpt | markdownify }}
+          </section>
+          <footer>
+            <ul class="actions">
+              <li><a href="{{ page.next.url }}" class="button">Read More</a></li>
+            </ul>
+          </footer>
+        </article>
+      {% endif %}
+      </div>
+    </footer>
+  </article>
 </div>
