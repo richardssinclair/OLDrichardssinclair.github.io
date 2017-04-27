@@ -3,35 +3,48 @@
 {% include head.html %}
 <body class="home">
 
-
-  <video class="myVideo" autoplay="" loop="" poster="video/portal.jpg" muted id="bgvid" source="" src="video/My Movie.mp4"></video>
-
-
-
-
+<div class="leftColumn">
   <header class="clearfix">
     <h1 class="h0 inline-block py-2 mt-4 header-title">{{ site.title }}</h1>
     <div class="clearfix mb-4 py-1">
       <p class="h4 lh-condensed font-smoothing">{{ site.description }}</p>
     </div>
-
-<p>Based in London</p>
-
-    <div class="homebuttons">
-    <ul class="mt-2 mr-2 mr-lg-3">
-      {% for my_page in site.pages %}
-      {% if my_page.title %}
-      <li class="inline-block block-lg text-right ml-1 ml-lg-0">
-        <a class="= no-underline h4 font-smoothing" href="{{ my_page.url | prepend: site.baseurl }}">{{my_page.title }}</a>
-      </li>
-      {% endif %}
-      {% endfor %}
-    </ul>
-    </div>
-
+    <p>Based in London</p>
   </header>
+</div>
 
+
+<div class="rightColumn">
+
+  <p class="shortbio">Growing up in a creative environment I developed skills in paint, sculpting, photography and film I became really passionate about the arts. A few months ago I was inspired by a creative coding meet up where I saw amazing animations, games and portfolios all done in Javascript. This inspired me to become a Developer. I was amazed by what people had done in the digital world where the limit is down to your imagination. I joined the Web Developer Immersive Course at General Assembly where I learnt new skills in web developing and am now looking for a new role where I can develop these skills further.</p>
+
+
+  <ul>
+    {% assign projects = site.projects | sort: 'date' %}
+    {% for project in projects reversed %}
+<li class="projectBox">
+      <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+      <p href="{{ project.url | prepend: site.baseurl }}">{{ project.subtitle }}</p>
+      <img src="{{ project.url | prepend: site.baseurl }}">{{ image }}</p>
+      <br>
+    </li>
+    {% endfor %}
+  </ul>
+
+<img src="" alt="">
+
+  <div class="homebuttons">
+  <ul class="mt-2 mr-2 mr-lg-3">
+    {% for my_page in site.pages %}
+    {% if my_page.title %}
+    <li class="inline-block block-lg text-right ml-1 ml-lg-0">
+      <a class="= no-underline h4 font-smoothing" href="{{ my_page.url | prepend: site.baseurl }}">{{my_page.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  </div>
+</div>
+  <!-- <video class="myVideo" autoplay="" loop="" poster="video/portal.jpg" muted id="bgvid" source="" src="video/My Movie.mp4"></video> -->
 </body>
-
-
 </html>
