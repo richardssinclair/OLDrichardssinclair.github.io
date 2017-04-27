@@ -1,12 +1,13 @@
 ---
-layout: project
+layout: post
 title: Remote Composer
-subtitle: A collaborative music app.
-image: http://i.imgur.com/phKqW93.jpg
-project_url: https://github.com/richardssinclair/wdi_project_4_api
-github_url: https://github.com/richardssinclair/WDI_Project_1
+date: 2015-02-06T14:37:44.000Z
 date:   2017-02-20
+
 ---
+
+<img src="http://i.imgur.com/phKqW93.jpg" class="fit image">
+
 ### The Concept.
 
 <p>Remote Composer is an open source music composition platform, for composers and artists who want to collaborate and develop musical ideas together. This app was built in four days as a duo project.</p>

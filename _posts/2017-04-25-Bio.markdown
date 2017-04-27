@@ -1,0 +1,4 @@
+---
+layout: post
+---
+Growing up in a creative environment I developed skills in paint, sculpting, photography and film I became really passionate about the arts. A few months ago I was inspired by a creative coding meet up where I saw amazing animations, games and portfolios all done in Javascript. This inspired me to become a Developer. I was amazed by what people had done in the digital world where the limit is down to your imagination. I joined the Web Developer Immersive Course at General Assembly where I learnt new skills in web developing and am now looking for a new role where I can develop these skills further.
