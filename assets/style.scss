@@ -9,12 +9,11 @@
 // "theme-{{ site.theme_fonts | default: "system" }}.scss"
 ;
 
-// li{
-//   display: inline-block !important;
-//   margin-right: 0px;
-//   margin: 10px;
-// }
-
+li{
+  display: inline-block !important;
+  margin-right: 0px;
+  margin: 10px;
+}
 
 .home{
   position: relative;
@@ -46,25 +45,25 @@ font-weight:100;
     text-align: center;
   }
 
-  video{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-
-
-  }
+  // video{
+  //   position: fixed;
+  //   top: 50%;
+  //   left: 50%;
+  //   min-width: 100%;
+  //   min-height: 100%;
+  //   width: auto;
+  //   height: auto;
+  //   z-index: -100;
+  //   -ms-transform: translateX(-50%) translateY(-50%);
+  //   -moz-transform: translateX(-50%) translateY(-50%);
+  //   -webkit-transform: translateX(-50%) translateY(-50%);
+  //   transform: translateX(-50%) translateY(-50%);
+  //   background: url(polina.jpg) no-repeat;
+  //   background-size: cover;
+  //   opacity: 0.5;
+  //
+  //
+  // }
 
 
 }
