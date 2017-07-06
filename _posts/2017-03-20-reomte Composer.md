@@ -16,9 +16,6 @@ date:   2017-02-20
 ### The Solution
 <p>To solve this problem we decided to create a platform for composers to upload their unfinished ideas, with the intention of other composers being able to contribute to that 'idea' and result in a collaborative composition.</p>
 
-  <img width="90%" src="http://i1174.photobucket.com/albums/r613/jgburton/Ideas_zpsww5zv5vn.png" alt="">
-
-
 ### Tech used:
 
 <ul>
